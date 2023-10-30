@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Sacabambaspis</title>
+    <link rel="icon" href="Tools/st,small,507x507-pad,600x600,f8f8f8.jpg">
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        .navbar .nav-links li.tap1 a{
+            color: var(--white);
+        }
+
+        .navbar .nav-links li.tap3 a{
+            color: var(--nav-main);
+        }
+
+        .navbar .nav-links li.tap3.unchecked a{
+            color: var(--white);
+        }
+
+        .navbar ul .slider{
+            position: absolute;
+            height: 60px;
+            width: 140px;
+            left: 0;
+            top: 18px;
+            background: var(--white);
+            border-radius: 15px 15px 0 0;
+            transform: translateX(316px);
+            transition: 0.2s ease-in;
+        }
+
+        section{
+            width: 100%;
+            height:calc(100vh - 70px);
+            display: flex;
+            margin-top: 70px;
+        }
+
+        .box1{
+            height: calc(100vh - 70px);
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            background-color: #e9f6fc;
+            border-top-right-radius: 80px;
+            border-bottom-right-radius: 80px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .box1 .title{
+            margin: 20px;
+            width: 600px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .box1 .card-box{
+            display: flex;
+            padding: 20px;
+        }
+
+        .box1 .card-box .card1{
+            width: 1000px;
+            height: 100%;
+            line-height: 38px;
+        }
+
+        .card-box .card1 h3{
+            border-bottom: 1px solid #ccc;
+            width: 100px;
+            height: 40px;
+        }
+
+        .card-box .card2 h3{
+            border-bottom: 1px solid #ccc;
+            width: 100px;
+            height: 40px;
+            justify-items: center;
+            line-height: 38px;
+        }
+
+        .card-box .card2 .text-box{
+            margin-top: 10px;
+            line-height: 28px;
+        }
+
+        .card1 a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .card1 a:hover{
+            color: blue;
+        }
+
+
+        .box2{
+            position: fixed;
+            height: calc(100vh - 70px);
+            right: 0;
+            width: 50%;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: -1;
+        }
+
+        .box2::before,
+        .box2::after{
+            content: '';
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+        }
+        
+        .box2::before{
+            clip-path: circle(20% at 50% 50%);
+            background: linear-gradient(135deg, #fff 0%, #d8f0fc 20%);
+        }
+
+        .box2::after{
+            clip-path: circle(17% at 50% 55%);
+            background: linear-gradient(135deg, #83c3f7 10%, #fff 100%);
+        }
+
+        .box2 .image{
+            z-index: 2;
+        }
+
+        .box2 img{
+            height: 400px;
+            margin-top: 34px;
+            border-radius: 70%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo"><a href="#">LoremIpsum</a></div>
+            <ul class="nav-links">
+                <li class="tap1"><a href="home.html"><i class='bx bxs-home' ></i> Home</a></li>
+                <li class="tap2"><a href="archive.html"><i class='bx bxs-book'></i></i> Archive</a></li>
+                <li class="tap3"><a href="about.html"><i class='bx bxs-user'></i> About Me</a></li>
+                <div class="slider"></div>
+            </ul>    
+        </div>
+    </nav>
+    <section>
+        <div class="box1">
+            <div class="title">
+                <h1>Information</h1>
+            </div>
+            <div class="card-box">
+                <div class="card1">
+                    <h3>Details</h3>
+                    <h4>Name : </h4>
+                    <p>Candra Purnama</p>
+                    <h4>NIM : </h4>
+                    <p>211011402049</p>
+                    <h4>Class : </h4>
+                    <p>05TPLP013</p>
+                    <h4>E-mail : </h4>
+                    <p><a href="mailto:candrapurnama06@gmail.com">candrapurnama06@gmail.com</a></p>
+                </div>
+                <div class="card2">
+                    <h3>About Me</h3>
+                    <div class="text-box">
+                        <p>Hallo, Nama saya Candra Purnama. Saya berkuliah di Universitas Pamulang Jurusan Teknik Informatika. Saya membuat Website ini untuk memenuhi nilai tugas Pemrograman Web yang diberikan oleh dosen.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="box2">
+            <div class="image">
+                <img src="https://static.miraheze.org/hololivewiki/thumb/6/69/Gawr_Gura_-_Portrait_01.png/1200px-Gawr_Gura_-_Portrait_01.png" alt="">
+            </div>
+        </div>
+    </section>
+    <script src="script2.js"></script>
+</body>
+</html>

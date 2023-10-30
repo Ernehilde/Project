@@ -1,0 +1,11 @@
+Font : 
+Popins : 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+font-family: 'Poppins', sans-serif;
+}
+</style>
+
+Boxicon : 
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>

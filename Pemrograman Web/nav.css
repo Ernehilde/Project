@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3 ease;
+}
+
+:root{
+    --white : #FFFFFF;
+    --black : #24292d;
+    --nav-main :  #4098df;
+    --switch-main : #002ca3;
+    --light-bg : #e9f6fc;
+}
+
+body{
+    background: var(--white);
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background: var(--nav-main);
+    z-index: 111;
+}
+
+nav .navbar{
+    height: 100%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.navbar .logo a{
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.navbar .nav-links{
+    display: flex;
+    position: relative;
+    list-style: none;
+}
+
+.navbar .nav-links li{
+    position: relative;
+    margin: 30px;
+    z-index: 111;
+}
+
+.navbar .nav-links li a{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white);
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.navbar .nav-links li.tap1 a{
+    color: var(--nav-main);
+}
+
+.navbar .nav-links li.tap1.unchecked a{
+    color: var(--white);
+}
+
+.navbar .nav-links li.tap1.checked a{
+    color: var(--nav-main);
+}
+
+.navbar .nav-links li.tap2.checked a{
+    color: var(--nav-main);
+}
+
+.navbar .nav-links li.tap3.checked a{
+    color: var(--nav-main);
+}
+
+.navbar .nav-links li.tap4.checked a{
+    color: var(--nav-main);
+}
+.navbar .nav-links li a:hover{
+    opacity: 1;
+}
+
+.navbar ul .slider{
+    position: absolute;
+    height: 60px;
+    width: 140px;
+    left: 0;
+    top: 18px;
+    background: var(--white);
+    border-radius: 15px 15px 0 0;
+    transform: translateX(0);
+    transition: 0.2s ease-in;
+}
+
+ul .slider::before{
+    position: absolute;
+    content: '';
+    height: 25px;
+    width: 25px;
+    background: var(--nav-main);
+    bottom: 0;
+    left: -25px;
+    border-bottom-right-radius:15px ;
+    box-shadow: 13px 0 0 #fff;
+}
+
+ul .slider::after{
+    position: absolute;
+    content: '';
+    height: 25px;
+    width: 25px;
+    background: var(--nav-main);
+    bottom: 0;
+    right: -25px;
+    border-bottom-left-radius:15px ;
+    box-shadow: -13px 0 0 #fff;
+}
