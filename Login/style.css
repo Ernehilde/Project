@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+:root{
+    --primary-color: #4098df;
+    --primary-light-color : #007FFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9%;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    background: #8e9fff;
+    color: white;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+form input{
+    width: 100%;
+    padding: 0 2px;
+}
+
+form p{
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.header h1{
+    color: #ffffff;
+}
+form button{
+    position: relative;
+    left: 20px;
+    margin-top: 18px;
+    padding: 2px 20px;
+    background-color: rgb(0, 102, 255);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: var(--primary-color);
+}
+
+.content{
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+}
+
+.text{
+    position: relative;
+    width: 50%;
+    top: 60px;
+    left: 30px;
+}
+
+.text img{
+    width: 90%;
+}
+
+
+.register{
+    position: relative;
+    top: 80px;
+    width: 50%;
+    padding: 30px 9%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    left: -3%;
+}
+
+.register h1{
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.register form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.register form input{
+    width: 80%;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.register form .jenis{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    top: 10px;
+}
+
+.register form .jenis h5{
+    position: relative;
+}
+
+.register form .jenis .radio{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.jenis .perempuan, .jenis .laki, .jenis .lain{
+    width: 15%;
+    text-align: center;
+}
+
+.register button{
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+    top: 10px;
+}

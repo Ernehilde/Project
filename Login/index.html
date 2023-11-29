@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Logo</h1>
+            <div class="login-form">
+                <form action="connect.php" method="post">
+                    <div class="username">
+                        <p>email</p>
+                        <input type="text" name="email">
+                    </div>
+                    <div class="password">
+                        <p>Password</p>
+                        <input type="password" name="password">
+                    </div>
+                    <div class="login">
+                        <button>Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text">
+                <img src="layer.png" alt="">
+            </div>
+            <div class="register">
+                <h1>registrasi</h1>
+                <form action="">
+                    <input type="text" placeholder="Nama">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="No. Telp">
+                    <input type="password" placeholder="Password">
+                    <div class="jenis">
+                    <h5>Jenis Kelamin</h5>
+                    <div class="radio">
+                        <div class="perempuan">
+                            <input type="radio" name="jkelamin" value="Perempuan"><p>Perempuan</p>
+                        </div>
+                        <div class="laki">
+                            <input type="radio" name="jkelamin" value="Laki-laki"><p>Laki-laki</p>
+                        </div>
+                        <div class="lain">
+                            <input type="radio" name="jkelamin" value="Laki-laki"><p>Lainnya</p>
+                        </div>
+                    </div>
+                    </div>
+                </form>
+                <button>Sign Up</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
